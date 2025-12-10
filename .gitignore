@@ -32,5 +32,6 @@ bin/
 ### Maven ###
 mvnw
 mvnw.cmd
-.mvn
+.mvn/
 pom.xml
+target/

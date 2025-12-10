@@ -88,6 +88,7 @@
                <Insets right="10.0" />
             </padding>
          </Label>
+         <Button alignment="CENTER" mnemonicParsing="false" onAction="#backspaceButtonClick" text="⌫" textAlignment="CENTER" />
       </children>
       <opaqueInsets>
          <Insets />
@@ -106,47 +107,47 @@
        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
      </rowConstraints>
       <children>
-         <Button maxWidth="55.0" mnemonicParsing="false" text="7" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <Button alignment="CENTER" maxWidth="55.0" mnemonicParsing="false" onAction="#numpadButtonsClick" text="7" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
             <GridPane.margin>
                <Insets />
             </GridPane.margin></Button>
-         <Button maxWidth="55.0" mnemonicParsing="false" text="8" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <Button alignment="CENTER" maxWidth="55.0" mnemonicParsing="false" onAction="#numpadButtonsClick" text="8" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
             <GridPane.margin>
                <Insets />
             </GridPane.margin></Button>
-         <Button maxWidth="55.0" mnemonicParsing="false" text="9" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <Button alignment="CENTER" maxWidth="55.0" mnemonicParsing="false" onAction="#numpadButtonsClick" text="9" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
             <GridPane.margin>
                <Insets />
             </GridPane.margin></Button>
-         <Button layoutX="10.0" layoutY="13.0" maxWidth="55.0" mnemonicParsing="false" text="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <Button alignment="CENTER" layoutX="10.0" layoutY="13.0" maxWidth="55.0" mnemonicParsing="false" onAction="#numpadButtonsClick" text="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
             <GridPane.margin>
                <Insets />
             </GridPane.margin></Button>
-         <Button layoutX="110.0" layoutY="13.0" maxWidth="55.0" mnemonicParsing="false" text="5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <Button alignment="CENTER" layoutX="110.0" layoutY="13.0" maxWidth="55.0" mnemonicParsing="false" onAction="#numpadButtonsClick" text="5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
             <GridPane.margin>
                <Insets />
             </GridPane.margin></Button>
-         <Button layoutX="210.0" layoutY="13.0" maxWidth="55.0" mnemonicParsing="false" text="6" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <Button alignment="CENTER" layoutX="210.0" layoutY="13.0" maxWidth="55.0" mnemonicParsing="false" onAction="#numpadButtonsClick" text="6" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
             <GridPane.margin>
                <Insets />
             </GridPane.margin></Button>
-         <Button layoutX="10.0" layoutY="43.0" maxWidth="55.0" mnemonicParsing="false" text="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <Button alignment="CENTER" layoutX="10.0" layoutY="43.0" maxWidth="55.0" mnemonicParsing="false" onAction="#numpadButtonsClick" text="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
             <GridPane.margin>
                <Insets />
             </GridPane.margin></Button>
-         <Button layoutX="110.0" layoutY="43.0" maxWidth="55.0" mnemonicParsing="false" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <Button alignment="CENTER" layoutX="110.0" layoutY="43.0" maxWidth="55.0" mnemonicParsing="false" onAction="#numpadButtonsClick" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
             <GridPane.margin>
                <Insets />
             </GridPane.margin></Button>
-         <Button layoutX="210.0" layoutY="43.0" maxWidth="55.0" mnemonicParsing="false" text="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <Button alignment="CENTER" layoutX="210.0" layoutY="43.0" maxWidth="55.0" mnemonicParsing="false" onAction="#numpadButtonsClick" text="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
             <GridPane.margin>
                <Insets />
             </GridPane.margin></Button>
-         <Button layoutX="10.0" layoutY="73.0" maxWidth="55.0" mnemonicParsing="false" text="0" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+         <Button alignment="CENTER" layoutX="10.0" layoutY="73.0" maxWidth="55.0" mnemonicParsing="false" onAction="#numpadButtonsClick" text="0" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
             <GridPane.margin>
                <Insets />
             </GridPane.margin></Button>
-         <Button layoutX="110.0" layoutY="73.0" mnemonicParsing="false" prefWidth="210.0" text="Tentar" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+         <Button fx:id="tentarbutton" alignment="CENTER" layoutX="110.0" layoutY="73.0" mnemonicParsing="false" onAction="#tentarButtonClick" prefWidth="210.0" text="Tentar" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
             <GridPane.margin>
                <Insets />
             </GridPane.margin></Button>
@@ -154,17 +155,17 @@
    </GridPane>
    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
       <children>
-         <Label text="Voce tem 0 pontos!">
+         <Label fx:id="labelPont" text="Voce tem 0 pontos!">
             <HBox.margin>
                <Insets right="10.0" />
             </HBox.margin>
          </Label>
-         <Button mnemonicParsing="false" text="Passar">
+         <Button mnemonicParsing="false" onAction="#passarButtonClick" text="Passar">
             <HBox.margin>
                <Insets right="10.0" />
             </HBox.margin>
          </Button>
-         <Button mnemonicParsing="false" text="Reiniciar">
+         <Button mnemonicParsing="false" onAction="#reiniciarButtonClick" text="Reiniciar">
             <HBox.margin>
                <Insets right="10.0" />
             </HBox.margin>
